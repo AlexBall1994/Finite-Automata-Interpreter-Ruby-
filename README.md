@@ -1,5 +1,8 @@
 Finite-Automata-Interpreter-Ruby
+
+
 TO RUN
+
 Ruby fa.rb < Input File Name
 This is a school project I did last semester (Fall 2014). The code is use to build up NFAs based on user given commands and then convert the NFAs to DFAs. Below is an explanation for the entire project. This displays my understand of Ruby's object oriented fundamentals.
 he interpreter will accept the following commands:
