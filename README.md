@@ -1,10 +1,18 @@
 Finite-Automata-Interpreter-Ruby
 
+My Code: fa.rb
 
 TO RUN
 
 Ruby fa.rb < Input File Name
+
+
+
 This is a school project I did last semester (Fall 2014). The code is use to build up NFAs based on user given commands and then convert the NFAs to DFAs. Below is an explanation for the entire project. This displays my understand of Ruby's object oriented fundamentals.
+
+
+
+
 he interpreter will accept the following commands:
 symbol where symbol is a lowercase letter or the uppercase E. In the former case this command creates finite automaton that accepts just that letter, and in the latter case it creates an automaton that accepts just the empty string. The new automaton is pushed onto the stack. . pops off top 2 finite automata on the stack and creates a new NFA representing their concatenation, pushing this new NFA on to the stack | pops off top 2 finite automaton on stack, creates a new NFA representing their union, pushing this new NFA on to the stack * pops off top finite automaton on stack, creates a new NFA representing its closure, pushing this new NFA on to the stack SIZE prints # of states in the finite automaton at the top of the stack (without popping it off) PRINT prints the finite automaton at the top of the stack (without popping it off). All output from this command is preceded by %, so it is just for documentation & debugging STAT prints some statistics about the finite automaton at the top of the stack (without popping it off) DFA converts finite automaton (DFA or NFA) at the top of the stack to a DFA "str" using finite automaton (must be a DFA) at the top of the stack, decide whether to accept or reject string str GENSTR# prints all strings accepted by finite automaton (must be a DFA) at the top of the stack of length # or less COMPLEMENT converts finite automaton (must be DFA) on top of stack to a DFA that is its complement (i.e., rejects strings accepted by the previous DFA, and accepts strings rejected by the previous DFA) DONE interpreter exits  
 Example Here is an example session with the interpreter:
